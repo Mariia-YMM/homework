@@ -275,3 +275,29 @@ div>div
 {
     grid-area: T;
 }
+.pos
+{
+    position:absolute;
+    width: 100%;
+    min-height: 20px;
+    background: lightblue;
+    top:calc(50% - 10px);
+    text-align: center;
+    padding:25px 0;
+    font-weight: bold
+}
+.new
+{
+    position: relative
+}
+.fix
+{
+    position: fixed;
+    background: lightskyblue;
+    top:calc(50% - 260px);
+    left:0
+}
+.fix>p
+{
+    min-height: 130px
+}
