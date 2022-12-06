@@ -370,3 +370,7 @@ div>div
 {
     min-height: 130px
 }
+.super
+{
+    clear: left
+}
