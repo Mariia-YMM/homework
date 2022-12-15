@@ -10,13 +10,14 @@ html,body
     clear:left;
     display:block
 }
+}
 .menu
-    {
-        font-size: 0;
-        text-align: center;
-        padding: 10px 0;
-    }
-.menu .li1
+{
+    font-size: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+.menu li
 {
     display: inline-block;
     font-size: 20px;
@@ -26,11 +27,11 @@ html,body
     z-index: 5;
 }
 
-.menu .li1:hover
+.menu li:hover
 {
     background: aquamarine;
 }
-.menu .li1 a
+.menu li a
 {
     text-decoration:none;
     color: black;
@@ -109,7 +110,7 @@ html,body
     left:0;
     display: none;
 }
-.ul1 .li1
+.ul1 li
 {
     width: 100%;
 }
@@ -121,7 +122,7 @@ html,body
     display: none;
 }
 
-.li1:hover .ul1
+li:hover .ul1
 {
     display: block;
 }
@@ -141,7 +142,6 @@ html,body
 {
     display: block;
 }
-
 
 
 
