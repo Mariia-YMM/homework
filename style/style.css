@@ -10,7 +10,6 @@ html,body
     clear:left;
     display:block
 }
-}
 .menu
 {
     font-size: 0;
@@ -157,8 +156,6 @@ li:hover .ul1
     height: 200%;
     padding-right: 10px
 }
-
-
 
 .social
 {
@@ -485,4 +482,3 @@ div>div
 .super
 {
     clear: left
-}
