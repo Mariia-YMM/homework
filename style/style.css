@@ -161,6 +161,11 @@ li:hover .ul1
 {
     font-size: 0;
     text-align: right;
+    display: inline-block;
+    width: 130px;
+    padding: 120px 0 0 70px;
+    transform: rotate(-45deg);
+
 }
 .social li
 {
@@ -168,24 +173,29 @@ li:hover .ul1
 }
 .social li a
 {
-    background: url("../images/sprites.png") -300px 0;
+    background: url("../images/sprites.png") 0 0;
     width: 50px;
     height: 50px;
     display: block;
     margin: 5px;
+    overflow: hidden;
+    border: 2px solid black;
 }
+
 .social li+li a
 {
-    background-position: -350px 0;
+    background-position: -100px 0;
 }
 .social li+li+li a
 {
-    background-position: -400px 0;
+    background-position: -200px 0;
 }
 .social li+li+li+li a
 {
-    background-position: -450px 0;
+    background-position: -300px 0;
+
 }
+
 
 h1
 {
@@ -482,3 +492,30 @@ div>div
 .super
 {
     clear: left
+
+.hover_me
+{
+    position: fixed;
+    background: rosybrown;
+    width: 300px;
+    height: 300px;
+    padding: 20px 0 0 20px;
+    right: -250px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 3s ease;
+}
+.hover_me:hover
+{
+    right: 0;
+    background: bisque;
+}
+.click
+{
+    position: absolute;
+    font-size: 50px;
+    left: 0;
+    bottom: 0;
+    transform-origin: 25px 25px;
+    transform: rotate(-90deg);
+}
