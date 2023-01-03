@@ -557,27 +557,6 @@ h3{color: darkslateblue}
     animation: none
 }
 
-.gradient:before
-{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 60%;
-    height: 35%;
-    background: radial-gradient(circle at 0 -550%, rgba(173,216,230,0) 90%, rgba(173,216,230,.5) 90%);
-}
-.gradient:after
-{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 60%;
-    height: 35%;
-    background: radial-gradient(circle at 100% -550%, rgba(173,216,230,0) 90%, rgba(173,216,230,.5) 90%);
-}
-
 .to_one {
     position: relative;
     width: 500px;
