@@ -806,5 +806,83 @@ h3{color: darkslateblue}
 
 
 
+input {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 50px;
+    height: 20px;
+    padding: 0;
+    border: solid 0.5px #000;
+}
+
+.button {
+    position: absolute;
+    background: #ccc;
+    width: 17px;
+    text-align: center;
+    pointer-events: none;
+    height: 10px;
+    line-height: 10px;
+}
+
+.plus {
+    left: 43px;
+    top: 10.5px;
+}
+.minus{
+    left: 43px;
+    top: 20.5px;
+}
+
+
+::placeholder
+{
+    color:red;
+    font-size: 20px;
+    font-style:oblique
+}
+:placeholder-shown
+{
+    background: #9b9b9b;
+}
+.box{
+    position: relative;
+    width: 250px;
+    height: 50px;
+    margin:10px
+}
+select
+{
+    padding: 10px 60px 10px 10px;
+    width: 250px;
+    height: 50px;
+    background: #00b0e8;
+    border:2px solid blue;
+}
+.box span{
+    position: absolute;
+    top:0;
+    right: 0;
+    display: block;
+    background: #00b0e8;
+    width: 50px;
+    height: 46px;
+    pointer-events: none;
+    border:2px solid blue;
+    border-left:none
+}
+.box span:before{
+    content:"";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top:15px;
+    right: 15px;
+    background: #0c141f;
+}
+
+
 
 
