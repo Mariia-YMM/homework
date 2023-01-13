@@ -977,7 +977,7 @@ select
 .checkbox2:checked
 {
     background:green;
-    transition: all .5s ease;
+   
 }
 .checkbox2:before
 {
