@@ -544,8 +544,8 @@ footer .menu li:last-child :after
 }
 .last
 {
-    margin:28px 466px;
-    padding-bottom:20px
+    padding:20px;
+    text-align: center;
 }
 .last p
 {
