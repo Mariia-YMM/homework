@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@font-face {
+    font-family: 'good_times_rg';
+    src: url('../fonts/good-times-rg/good-times.rg-regular-webfont.eot');
+    src: url('../fonts/good-times-rg/good-times.rg-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/good-times-rg/good-times.rg-regular-webfont.woff2') format('woff2'),
+    url('../fonts/good-times-rg/good-times.rg-regular-webfont.woff') format('woff'),
+    url('../fonts/good-times-rg/good-times.rg-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
