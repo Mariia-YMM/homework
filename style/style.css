@@ -29,12 +29,12 @@ a, span, p
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     text-shadow: 0 1px 0 #1b1d22;
+    color: #ffffff
 }
 a{
     text-decoration:none;
     line-height: 20px;
     display: block;
-    color: #ffffff
 }
 .tel span
 {
@@ -83,10 +83,8 @@ a span:first-child
 
 h1 span
 {
-    color: #ffffff;
     font-family: "good_times_rg", sans-serif;
     font-size: 48px;
-
 }
 h1 span+span
 {
@@ -97,7 +95,6 @@ h1 span+span
 {
     font-style: italic;
     text-align: center;
-    color: #ffffff;
     padding-top:14px
 }
 
@@ -219,8 +216,8 @@ h1 span+span
 .ul1
 {
     position: absolute;
-    top:100%;
-    left:-2px;
+    top:106%;
+    left:-6px;
     z-index: 0;
     opacity: 0;
     pointer-events: none
@@ -253,7 +250,6 @@ h1 span+span
     background-color:#2c323e;
     color: #ffffff;
     text-shadow: 0 1px 0 #1b1d22;
-
 }
 
 .menu li a:hover
@@ -267,6 +263,10 @@ li:hover .ul1
     opacity: 1;
     pointer-events: all;
     z-index: 5;
+}
+.menu li:hover li:before
+{
+    background:none
 }
 hr
 {
@@ -549,7 +549,6 @@ footer .menu li:last-child :after
 }
 .last p
 {
-    color: #ffffff;
     font-size: 16px;
     line-height: 20px;
     text-shadow: 0 1px 0 #1b1d22;
