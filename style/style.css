@@ -552,6 +552,10 @@ footer .menu
 {
     padding: 12px 0 6px 126px
 }
+footer .menu a
+{
+    padding: 5px 19px 8px 19px
+}
 footer .menu li:last-child :after
 {
     content: "";
