@@ -7,34 +7,32 @@ switch (typeMathoperation){
         let second = prompt(secondNumber);
         alert( `Calculations are finished! Sum: ${first} + ${second} = ${+first + +second}`);
         break;
-    case 'diff':
+    case 'diff':{
         let first = prompt(firstNumber);
         let second = prompt(secondNumber);
         alert( `Calculations are finished! Diff: ${first} - ${second} = ${first - second}`);
-        break;
-    case 'mult':
+        break};
+    case 'mult':{
         let first = prompt(firstNumber);
         let second = prompt(secondNumber);
         alert( `Calculations are finished! Mult: ${first} * ${second} = ${first * second}`);
-        break;
-    case 'div':
+        break};
+    case 'div':{
         let first = prompt(firstNumber);
         let second = prompt(secondNumber);
         alert( `Calculations are finished! Div: ${first} / ${second} = ${first / second}`);
-        break;
-    case 'pow':
+        break};
+    case 'pow':{
         let first = prompt('Please enter number is the base');
         let second = prompt('Please enter number is the exponent');
         alert(Math.pow(first, second));
-        break;
-    case 'sin':
+        break};
+    case 'sin':{
         let first = prompt(firstNumber);
         alert(Math.sin(first));
-        break;
-    case 'cos':
+        break};
+    case 'cos':{
         let first = prompt(firstNumber);
         alert(Math.cos(first));
-        break;
+        break};
 }
-
-
