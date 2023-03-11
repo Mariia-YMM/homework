@@ -31,8 +31,8 @@ if (operation === 'sin' || operation === 'cos') {
     }
 }
 
-console.log("Operation " + operation + " finished with result " + result);
-history.push("Operation " + operation + " finished with result " + result);
+console.log("Operation" + operation + "finished with result" + result);
+history.push("Operation" + operation + "finished with result" + result);
 
 while (confirm('Do you want to perform another operation?')) {
     do {
@@ -63,8 +63,8 @@ while (confirm('Do you want to perform another operation?')) {
         }
     }
 
-    console.log("Operation " + operation + " finished with result " + result);
-    history.push("Operation " + operation + " finished with result " + result);
+    console.log("Operation" + operation + "finished with result" + result);
+    history.push("Operation" + operation + "finished with result" + result);
 }
 if (confirm('Want to see your transaction history?')) {
     console.log(history.join('\n'));
