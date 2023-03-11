@@ -1,5 +1,8 @@
 let history = [];
-let operation, num1, num2, result;
+let operation;
+let num1;
+let num2;
+let result;
 do {
     operation = prompt('Please select the type of mathematical operation: add, sub, mult, div, sin, cos, pow');
 } while (!['add', 'sub', 'mult', 'div', 'sin', 'cos', 'pow'].includes(operation));
