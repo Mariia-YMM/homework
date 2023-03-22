@@ -17,11 +17,11 @@ const util = {
                 min= source[i]}
             }
             return min},
-    getAverage: function(numbers) {
+    getAverage: function(source) {
                 let sum = 0;
-                for (let i = 0; i < numbers.length; i += 1){
-                sum += numbers[i]};
-                return sum / numbers.length
+                for (let i = 0; i < source.length; i += 1){
+                sum += source[i]};
+                return sum / source.length
                 },
     verifyNumbers: function(source) {
                     let result = [];
