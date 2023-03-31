@@ -1,17 +1,24 @@
 const myArray = [1, 5, 6, 2, 3, -2,];
-const myNewArray=[1, 5, 6, 2, 3, -2,"some string", "one morre string"];
+const myNewArray=[1, 5, 6, 2, 3, -2,"some string", "one morre string"  ];
 const strings = ["this","text is used", "for","example","blablablaa"];
 const util = {
-    reverse: function(source) {
-            let result = [];
-            for(let i = 0; i < source.length; i++){
-            result[i]= source[source.length -1 - i];
-            }
-            return result;
-            },
+    reverse:function(source) {
+    let result = [];
+    for(let i = 0; i < source.length; i++){
+        result[i] = source[source.length - 1 - i];
+    }
+    if(typeof source === "string"){
+        let reversedString = "";
+        for(let i = source.length - 1; i >= 0; i--){
+            reversedString += source[i];
+        }
+        result = reversedString;
+    }
+    return result;
+},
     getMin: function(source) {
             let i = source.length;
-            min = source[i-1];
+            min = source[i - 1];
             while (i--){
                 if(source[i] < min){
                 min= source[i]}
