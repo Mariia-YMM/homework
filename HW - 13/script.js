@@ -5,13 +5,12 @@ const form = document.getElementById('form');
 const emailFilter = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const errorMessage = document.createElement('p');
 
-    function validateEnter() {
-    if (login.value && password.value) {
-    enter.disabled = false;
+ function validateEnter() {
+    if (login.value === "" ||  password.value === "") {
+        enter.disabled = true;
     } else {
-    enter.disabled = true;
-    }
-    }
+        enter.disabled = false;
+    }}
 
 login.addEventListener('input', validateEnter);
 password.addEventListener('input', validateEnter);
