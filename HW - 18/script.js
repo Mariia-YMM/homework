@@ -53,7 +53,7 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
                 var data = JSON.parse(xhr.responseText);
                 updateNewUsers(data);
             } else {
-                alert('Не удалось добавить пользователя.');
+                alert('Failed to add user.');
             }
         }
     };
