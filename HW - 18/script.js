@@ -50,7 +50,7 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 201) {
-                var data = JSON.parse(xhr.responseText);
+                let data = JSON.parse(xhr.responseText);
                 updateNewUsers(data);
             } else {
                 alert('Failed to add user.');
