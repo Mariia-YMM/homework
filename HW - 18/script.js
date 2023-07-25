@@ -4,7 +4,7 @@ function fetchData(url, callback) {
     xhr.send();
 
     if (xhr.status === 200) {
-        let data = JSON.parse(xhr.responseText);
+        let data = JSON.parse(xhr.response);
         callback(data);
     } else {
         alert('Еrror loading data.');
@@ -50,7 +50,7 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 201) {
-                let data = JSON.parse(xhr.responseText);
+                let data = JSON.parse(xhr.response);
                 updateNewUsers(data);
             } else {
                 alert('Failed to add user.');
