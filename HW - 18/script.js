@@ -3,10 +3,10 @@ function getDataFromURL(url, callback) {
     xhr.open('GET', url, false);
     xhr.send();
 
-    if (xhr.status === 200) {
+    try {
         let data = JSON.parse(xhr.response);
         callback(data);
-    } else {
+    } catch (error) {
         alert('Еrror loading data.');
     }
 }
@@ -49,10 +49,10 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 201) {
+            try {
                 let data = JSON.parse(xhr.response);
                 updateNewUsers(data);
-            } else {
+            } catch (error) {
                 alert('Failed to add user.');
             }
         }
