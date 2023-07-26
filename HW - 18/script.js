@@ -1,4 +1,4 @@
-function fetchData(url, callback) {
+function getDataFromURL(url, callback) {
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url, false);
     xhr.send();
@@ -63,7 +63,7 @@ document.getElementById('userForm').addEventListener('submit', function (event) 
 let currentPage = 1;
 window.addEventListener('load', function () {
     let url = 'https://reqres.in/api/users?page=' + currentPage;
-    fetchData(url, function (data) {
+    getDataFromURL(url, function (data) {
         updateUsers(data.data);
         document.getElementById('prevBtn').disabled = true;
         if (currentPage < data.total_pages) {
@@ -75,7 +75,7 @@ document.getElementById('prevBtn').addEventListener('click', function () {
     if (currentPage > 1) {
         currentPage--;
         let url = 'https://reqres.in/api/users?page=' + currentPage;
-        fetchData(url, function (data) {
+        getDataFromURL(url, function (data) {
             updateUsers(data.data);
             document.getElementById('nextBtn').disabled = false;
             if (currentPage === 1) {
@@ -88,7 +88,7 @@ document.getElementById('prevBtn').addEventListener('click', function () {
 document.getElementById('nextBtn').addEventListener('click', function () {
     currentPage++;
     let url = 'https://reqres.in/api/users?page=' + currentPage;
-    fetchData(url, function (data) {
+    getDataFromURL(url, function (data) {
         updateUsers(data.data);
         document.getElementById('prevBtn').disabled = false;
         if (currentPage >= data.total_pages) {
@@ -99,7 +99,7 @@ document.getElementById('nextBtn').addEventListener('click', function () {
 
 window.addEventListener('load', function () {
     let url = 'https://reqres.in/api/users?page=' + currentPage;
-    fetchData(url, function (data) {
+    getDataFromURL(url, function (data) {
         updateUsers(data.data);
     });
 });
