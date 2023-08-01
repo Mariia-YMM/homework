@@ -3,7 +3,11 @@ document.getElementById("loginButton").addEventListener("click", login);
 function login() {
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
-
+    
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters long.");
+        return;
+    }
     const loginData = {
         email: email,
         password: password
